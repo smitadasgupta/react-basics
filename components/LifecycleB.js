@@ -6,7 +6,7 @@ class LifecycleB extends Component {
     console.log("LifecycleB constructor")
   }
 
-  static getDerivedStateFromProps() {
+  static getDerivedStateFromProps(props,state) {
     console.log("LifecycleB getDerivedStateFromProps")
   }
 
