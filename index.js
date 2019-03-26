@@ -6,6 +6,7 @@ import Greet from './components/Greet.js'
 import Welcome from './components/Welcome.js'
 import Message from './components/Message.js'
 import Form from './components/Form.js'
+import LifecycleA from './components/LifecycleA.js'
 
 class App extends Component {
   constructor() {
@@ -18,9 +19,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Form/>
         
+        <LifecycleA/>
         {/*<Hello name={this.state.name} />
+        <Form/>
         <Message/>
         
          <Greet name="Tina" surname="lorem">
