@@ -9,17 +9,38 @@ class LifecycleA extends Component {
 
   static getDerivedStateFromProps(props,state) {
     console.log("LifecycleA getDerivedStateFromProps")
+    return null
   }
 
   componentDidMount() {
     console.log("LifecycleA componentDidMount")
   }
 
+  shouldComponentUpdate(){
+    console.log("LifecycleA shouldComponentUpdate")
+    return true
+  }
+
+  getSnapshotBeforeUpdate(prevProps,prevState) {
+    console.log("LifecycleA getSnapshotBeforeUpdate")
+    return null
+  }
+
+  componentDidUpdate() {
+    console.log("LifecycleA componentDidUpdate")
+  }
+
+  changeState = () => {
+    this.setState({
+      name: 'Smita'
+    })
+  }
   render() {  
     console.log("LifecycleA render")
     return (
       <div>
-          Lifecycle A - Component Mounting methods
+          Lifecycle A - Component Update methods<br/>
+          <button onClick={this.changeState}>Click</button>
           <LifecycleB/>
       </div>
     )
