@@ -8,6 +8,7 @@ import Message from './components/Message.js'
 import Form from './components/Form.js'
 import LifecycleA from './components/LifecycleA.js'
 import FragmentDemo from './components/Fragmentdemo.js'
+import ParentComponent from './components/ParentComponent.js'
 
 class App extends Component {
   constructor() {
@@ -20,10 +21,11 @@ class App extends Component {
   render() {
     return (
       <div>
+        <ParentComponent/> 
         
-        <FragmentDemo/>
        
         {/*<Hello name={this.state.name} />
+        <FragmentDemo/>
         <LifecycleA/>
         <Form/>
         <Message/>
