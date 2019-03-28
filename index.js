@@ -11,6 +11,7 @@ import FragmentDemo from './components/Fragmentdemo.js'
 import ParentComponent from './components/ParentComponent.js'
 import RefsDemo from './components/RefsDemo.js'
 import FocusInput from './components/FocusInput.js'
+import PortalDemo from './components/PortalDemo.js'
 
 
 
@@ -25,8 +26,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <FocusInput/>
+        <PortalDemo/>
+        
         {/*<Hello name={this.state.name} />
+        <FocusInput/>
         <RefsDemo/>
         <ParentComponent/> 
         <FragmentDemo/>
