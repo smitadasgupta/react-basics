@@ -10,6 +10,9 @@ import LifecycleA from './components/LifecycleA.js'
 import FragmentDemo from './components/Fragmentdemo.js'
 import ParentComponent from './components/ParentComponent.js'
 import RefsDemo from './components/RefsDemo.js'
+import FocusInput from './components/FocusInput.js'
+
+
 
 class App extends Component {
   constructor() {
@@ -22,10 +25,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        
-        <RefsDemo/>
-       
+        <FocusInput/>
         {/*<Hello name={this.state.name} />
+        <RefsDemo/>
         <ParentComponent/> 
         <FragmentDemo/>
         <LifecycleA/>
