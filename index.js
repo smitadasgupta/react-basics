@@ -9,6 +9,7 @@ import Form from './components/Form.js'
 import LifecycleA from './components/LifecycleA.js'
 import FragmentDemo from './components/Fragmentdemo.js'
 import ParentComponent from './components/ParentComponent.js'
+import RefsDemo from './components/RefsDemo.js'
 
 class App extends Component {
   constructor() {
@@ -21,10 +22,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ParentComponent/> 
         
+        <RefsDemo/>
        
         {/*<Hello name={this.state.name} />
+        <ParentComponent/> 
         <FragmentDemo/>
         <LifecycleA/>
         <Form/>
