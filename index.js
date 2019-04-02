@@ -12,8 +12,8 @@ import ParentComponent from './components/ParentComponent.js'
 import RefsDemo from './components/RefsDemo.js'
 import FocusInput from './components/FocusInput.js'
 import PortalDemo from './components/PortalDemo.js'
-
-
+import ClickCounter from './components/ClickCounter.js'
+import HoverCounter from './components/HoverCounter.js'
 
 class App extends Component {
   constructor() {
@@ -26,9 +26,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <PortalDemo/>
+        <ClickCounter name="Smita"/>
+        <HoverCounter name="Ishanvi"/>
+        {/*
         
-        {/*<Hello name={this.state.name} />
+        <PortalDemo/>
+        <Hello name={this.state.name} />
         <FocusInput/>
         <RefsDemo/>
         <ParentComponent/> 
