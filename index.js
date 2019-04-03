@@ -14,6 +14,8 @@ import FocusInput from './components/FocusInput.js'
 import PortalDemo from './components/PortalDemo.js'
 import ClickCounter from './components/ClickCounter.js'
 import HoverCounter from './components/HoverCounter.js'
+import ComponentC from './components/ComponentC.js'
+import {UserProvider} from './components/UserContext.js'
 
 class App extends Component {
   constructor() {
@@ -26,10 +28,12 @@ class App extends Component {
   render() {
     return (
       <div>
+      <UserProvider value="Smita">
+        <ComponentC/>
+      </UserProvider>
+        {/*
         <ClickCounter name="Smita"/>
         <HoverCounter name="Ishanvi"/>
-        {/*
-        
         <PortalDemo/>
         <Hello name={this.state.name} />
         <FocusInput/>
