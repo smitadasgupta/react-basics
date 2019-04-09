@@ -16,6 +16,7 @@ import ClickCounter from './components/ClickCounter.js'
 import HoverCounter from './components/HoverCounter.js'
 import ComponentC from './components/ComponentC.js'
 import {UserProvider} from './components/UserContext.js'
+import PostList from './components/PostList.js'
 
 class App extends Component {
   constructor() {
@@ -28,10 +29,12 @@ class App extends Component {
   render() {
     return (
       <div>
-      <UserProvider value="Smita">
+      <PostList/>
+      
+        {/*
+        <UserProvider value="Smita">
         <ComponentC/>
       </UserProvider>
-        {/*
         <ClickCounter name="Smita"/>
         <HoverCounter name="Ishanvi"/>
         <PortalDemo/>
